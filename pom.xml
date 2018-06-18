@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-petclinic</artifactId>
-    <version>5.0.6</version>
+    <version>5.0.6-SNAPSHOT</version>
 
     <name>petclinic</name>
     <packaging>war</packaging>
@@ -513,5 +513,12 @@
         </repository>
     </repositories>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
     <url>demopetclinic</url>
 </project>
